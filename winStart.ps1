@@ -8,7 +8,7 @@ Write-Output($scriptPath)
 if (Test-Path -Path $scriptPath".\jre")
 {
     # if it exists, start the game
-    Start-Process -FilePath ".\jre\bin\javaw.exe" -ArgumentList "-jar .\TheLegendOfTheCryingPotato.jar"
+    Start-Process -FilePath $scriptPath".\jre\jdk-18.0.2.1\bin\javaw.exe" -ArgumentList "-jar .\TheLegendOfTheCryingPotato.jar"
 }
 else
 {
